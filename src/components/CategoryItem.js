@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 import LazyImage from './LazyImage';
 
 const CategoryItem = ({ category, categorySelected, setCategorySelected }) => {
@@ -23,6 +24,12 @@ const CategoryItem = ({ category, categorySelected, setCategorySelected }) => {
             <p className="text-center"> {strCategory} </p>
         </figure>
     )
+}
+
+CategoryItem.propTypes = {
+    category: PropTypes.object.isRequired,
+    categorySelected: PropTypes.string.isRequired,
+    setCategorySelected: PropTypes.func.isRequired
 }
 
 export default CategoryItem

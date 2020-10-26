@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing <RecipesList /> should render <Loader /> 1`] = `<Loader />`;
+
+exports[`Testing <RecipesList /> should render RecipesList component 1`] = `
+<div
+  className="mt-4"
+>
+  <hr />
+  <div
+    className="row row-cols-1 row-cols-md-3"
+  >
+    <RecipeItem
+      key="52874"
+      recipe={
+        Object {
+          "idMeal": "52874",
+          "strMeal": "Beef and Mustard Pie",
+          "strMealThumb": "http://imae.jg",
+        }
+      }
+    />
+  </div>
+</div>
+`;

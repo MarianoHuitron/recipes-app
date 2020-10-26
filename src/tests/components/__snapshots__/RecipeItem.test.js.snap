@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing <RecipeItem /> should render RecipeItem 1`] = `
+<div
+  className="col mb-4"
+>
+  <div
+    className="card h-100"
+  >
+    <LazyImage
+      alt="image-Beef and Mustard Pie"
+      src="http://imae.jg"
+      styleClass="card-img-top"
+    />
+    <div
+      className="card-body"
+    >
+      <h5
+        className="card-title"
+      >
+         
+        Beef and Mustard Pie
+         
+      </h5>
+    </div>
+    <div
+      className="card-footer"
+    >
+      <button
+        className="btn btn-block btn-secondary"
+        onClick={[Function]}
+      >
+        See More
+      </button>
+    </div>
+  </div>
+</div>
+`;

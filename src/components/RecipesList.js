@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 import Loader from './Loader';
 import RecipeItem from './RecipeItem';
 
@@ -24,6 +25,10 @@ const RecipesList = ({ recipes }) => {
            
         </div>
     )
+}
+
+RecipesList.propTypes = {
+    recipes: PropTypes.array.isRequired
 }
 
 export default RecipesList

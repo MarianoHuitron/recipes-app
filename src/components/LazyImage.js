@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import PropTypes from 'prop-types';
 
 
 const registerObserver = (ref, setShowImage) => {
@@ -34,6 +35,12 @@ const LazyImage = ({src, alt, styleClass}) => {
         <span ref={imageRef} style={{width: '100%', height: '100%', background: '#ccc'}}>
         </span>
     )
+}
+
+LazyImage.propTypes = {
+    src: PropTypes.string.isRequired,
+    alt: PropTypes.string.isRequired,
+    styleClass: PropTypes.string.isRequired
 }
 
 export default LazyImage

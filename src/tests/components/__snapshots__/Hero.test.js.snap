@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing <Hero /> should render hero component 1`] = `
+<div
+  className="hero"
+>
+  <div
+    className="hero-content"
+  >
+    <h3
+      className="text-secondary"
+    >
+      The MealDB
+    </h3>
+    <h1
+      className="text-white"
+    >
+      Best food recipes 
+    </h1>
+  </div>
+</div>
+`;

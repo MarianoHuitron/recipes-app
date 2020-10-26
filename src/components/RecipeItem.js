@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 import { useHistory } from 'react-router-dom';
 import LazyImage from './LazyImage'
 
@@ -28,6 +29,10 @@ const RecipeItem = ({ recipe }) => {
             </div>
         </div>
     )
+}
+
+RecipeItem.propTypes = {
+    recipe: PropTypes.object.isRequired
 }
 
 export default RecipeItem

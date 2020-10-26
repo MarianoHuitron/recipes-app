@@ -1,7 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react'
+import PropTypes from 'prop-types';
 import { simpleFetch } from '../helper/fetch';
 import CategoryItem from './CategoryItem';
 import Loader from './Loader';
+
 
 const Categories = ({ categorySelected, setCategorySelected }) => {
 
@@ -50,6 +52,11 @@ const Categories = ({ categorySelected, setCategorySelected }) => {
             ))}
         </div>
     )
+}
+
+Categories.propTypes = {
+    categorySelected: PropTypes.string.isRequired,
+    setCategorySelected: PropTypes.func.isRequired
 }
 
 export default Categories

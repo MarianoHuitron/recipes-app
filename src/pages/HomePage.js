@@ -7,13 +7,13 @@ import { simpleFetch } from '../helper/fetch';
 const HomePage = () => {
 
     
-    const [categorySelected, setCategorySelected] = useState(null);
+    const [categorySelected, setCategorySelected] = useState('Beef');
     const [recipes, setRecipes] = useState([]);
 
 
     useEffect(() => {
         const getMeal = async () => {
-            const resp = await simpleFetch(`/filter.php?c=${categorySelected || 'Seafood'}`);
+            const resp = await simpleFetch(`/filter.php?c=${categorySelected}`);
             setRecipes(resp.meals);
         }
         getMeal();
