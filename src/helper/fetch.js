@@ -7,6 +7,6 @@ export const simpleFetch = async (endpoint) => {
         const body = await resp.json();
         return body;
     } catch (error) {
-        console.log(error);
+        return null;
     }
 }
